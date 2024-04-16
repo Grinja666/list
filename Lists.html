@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список</title>
+    <style>
+        
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 20px;
+        }
+        .circle {
+            list-style-image: url('circle.png');
+        }
+        .emoji-marker {
+            list-style-type: none;
+        }
+        .emoji-marker li::before {
+            content: '\1F449'; 
+            margin-right: 10px;
+        }
+        .symbol-marker li {
+            list-style-type: disc; 
+        }
+        .symbol-marker li::before {
+            content: '';
+        }
+
+        
+        html {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: linear-gradient(to bottom, #00FF00, #FFFF00);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <h1>Списки</h1> 
+    
+    <ul class="circle">
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>C++</li>
+        <li>C#</li>
+        <li>Ruby</li>
+    </ul>
+    
+     <ul class="circle">
+       <li>1) Java</li>
+       <li>2) Python</li>
+       <li>3) JavaScript</li>
+       <li>4) C++</li>
+       <li>5) C#</li>
+       <li>6) Ruby</li>
+    </ul>
+
+    <ul class="emoji-marker">
+        <li>🔥 JavaScript</li>
+        <li>💻 Python</li>
+        <li>👩‍💻 Ruby</li>
+        <li>🚀 Go</li>
+        <li>📱 Swift</li>
+       <li>💡 Kotlin</li>
+    </ul>
+
+    <ul class="symbol-marker">
+        <li>SQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>PHP</li>
+        <li>Perl</li>
+        <li>Objective-C</li>
+    </ul>
+
+    <ul>
+        <li>! React</li>
+        <li>@ Angular</li>
+        <li># Vue.js</li>
+        <li>$ Node.js</li>
+        <li>% Express.js</li>
+        <li>^ Django</li>
+    </ul>
+</div>
+
+</body>
+</html>
